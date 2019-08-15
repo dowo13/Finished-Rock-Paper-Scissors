@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+
+    background-color: black;
+}
+
+h1 {
+
+    padding: 10px;
+    margin: 5px;
+    color:rgb(248, 210, 3);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+h3 {
+
+    padding: 10px;
+    margin: 5px;
+    color:rgb(248, 210, 3);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+
+}
+#main {
+    color:black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+.rock {
+
+    grid-column: 1/2;
+    grid-row: 6/7;
+    height: 25px;
+    width:auto;
+    font-size: 20px;
+    text-align: center;
+    
+    
+    
+    
+}
+
+.paper {
+ 
+    
+    height: 25px;
+    width: auto;
+    font-size: 20px;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    text-align: center;
+
+    
+}
+.scissors  {
+
+    
+    height: 25px;
+    width: auto;
+    font-size:20px;
+    grid-column: 3/4;
+    grid-row: 6/7;
+    text-align: center;
+    
+    
+}
+#button  {
+    border-style: none;
+    background-color: black;
+    outline: none;
+}
+  
+img{
+
+    outline: none;
+    border-radius: 8%;
+    overflow: auto;
+    backface-visibility:hidden;
+   /* box-shadow:-10px 10px rgb(244, 243, 242), 10px 10px rgb(244, 243, 242), -10px -10px rgb(244, 243, 242), 10px -10px rgb(244, 243, 242);*/
+
+    box-shadow: 0px -3px 40px 20px whitesmoke;
+    
+    height: 257px;
+    width: 337px;
+    cursor: grab;
+    background-color:rgb(253, 171, 159);
+    position: relative;
+
+    animation-name: shake;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+   /* grow on hover */
+   transition: all .2s ease-in-out;
+
+  }
+
+#button:hover img {
+    
+    border-style: none;
+    outline: none;
+    background-color: rgb(253, 171, 159);
+    backface-visibility:hidden;
+
+    transform: scale(1.5);
+    
+    animation-name: shakeAnim;
+  }
+  
+  @keyframes shakeAnim {
+    0% {left: 10px}
+    1% {left: -13px}
+    2% {left: 15px}
+    3% {left: -18px}
+    4% {left: 18px}
+    5% {left: -15px}
+    6% {left: 13px}
+    7% {left: 10px}
+  }
+  
+  @keyframes shake {
+    0% {left: 10px}
+    1% {left: -13px}
+    2% {left: 15px}
+    3% {left: -18px}
+    4% {left: 18px}
+    5% {left: -15px}
+    6% {left: 13px}
+    7% {left: 10px}
+
+    
+  }
+#results {
+    
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display:inline-flex;
+    text-align: center;
+    justify-content: center;
+    border:solid 3px;
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 10px whitesmoke;
+    color: rgb(247, 164, 201);
+    
+}
+
+.player-results {
+
+      
+    color:rgb(248, 210, 3);
+    font-size:60px;
+    width: 100px;
+    position: relative;
+    
+ 
+}
+#player-label{
+
+    font-size:20px;
+    position: absolute;
+    top:30px;
+    left: -25px;
+    background: rgb(248, 210, 3);
+    color:black;
+}
+.comp-results {
+
+    
+    color: rgb(248, 210, 3);
+    font-size:60px;
+    width: 100px;
+    position: relative;
+    
+}
+#comp-label{
+
+    color:black;
+    font-size:20px;
+    position: absolute;
+    top:30px;
+    right: -35px;
+    background: rgb(248, 210, 3);
+    
+}
+p {
+   
+    
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    
+
+    /*#fire effect around text*/
+    color: #f5f5f5;
+    text-shadow:
+    0px -2px 4px #fff,
+    0px -2px 10px #FF3,
+    0px -10px 20px #F90,
+    0px -20px 40px #C33;
+       
+}
