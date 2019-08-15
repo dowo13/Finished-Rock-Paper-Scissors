@@ -44,9 +44,6 @@ h3 {
     font-size: 20px;
     text-align: center;
     
-    
-    
-    
 }
 
 .paper {
@@ -85,7 +82,6 @@ img{
     border-radius: 8%;
     overflow: auto;
     backface-visibility:hidden;
-   /* box-shadow:-10px 10px rgb(244, 243, 242), 10px 10px rgb(244, 243, 242), -10px -10px rgb(244, 243, 242), 10px -10px rgb(244, 243, 242);*/
 
     box-shadow: 0px -3px 40px 20px whitesmoke;
     
@@ -95,6 +91,7 @@ img{
     background-color:rgb(253, 171, 159);
     position: relative;
 
+    /*shake effect on buttons*/
     animation-name: shake;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -112,11 +109,14 @@ img{
     background-color: rgb(253, 171, 159);
     backface-visibility:hidden;
 
+    animation-name: shakeAnim;
+
+    /*grow on hover*/
     transform: scale(1.5);
     
-    animation-name: shakeAnim;
+    
   }
-  
+  /*shake effect on buttons */
   @keyframes shakeAnim {
     0% {left: 10px}
     1% {left: -13px}

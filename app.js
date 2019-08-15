@@ -4,9 +4,10 @@ const compChoice = ['rock', 'paper', 'scissors'];
 let player;
 let playerScore = 0;
 let compScore = 0;
+
 //create button elements and append to DOM & create results div
-const main = document.getElementById('main')//.querySelector('.rock');//.getElementsByTagName('div')[0];
-let results = document.createElement('div');//let scores = document.getElementById('results');
+const main = document.getElementById('main');
+let results = document.createElement('div');
 results.id = 'results';
 
 main.appendChild(results);
@@ -16,9 +17,6 @@ main.appendChild(results);
 const p = document.createElement('p');
 
 main.appendChild(p);
-//p.textContent= 'results here';
-
-
 
 
 let newDiv = document.createElement('div');
@@ -57,14 +55,14 @@ btnR.innerHTML = '<img id="picR" src="/home/dom/functions/rock (1).png">';
 
 
 
-let main1 = document.getElementById('main').querySelector('.paper');//.getElementsByTagName('div')[1];
+let main1 = document.getElementById('main').querySelector('.paper');
 
 let btnP = document.createElement('button');
 btnP.id = "button";
 main1.appendChild(btnP);
 btnP.innerHTML = '<img id="picP" src="/home/dom/functions/paper.png">';
 
-let main2 = document.getElementById('main').querySelector('.scissors');//.getElementsByTagName('div')[2];
+let main2 = document.getElementById('main').querySelector('.scissors');
 let btnS = document.createElement('button');
 btnS.id = "button";
 main2.appendChild(btnS);
@@ -235,8 +233,6 @@ function gameWinner (){
 }
 
 function playAgain(){
-
-    //yes = confirm('play again?');
 
     if (true){
         location.reload();
