@@ -51,7 +51,7 @@ let main3 = document.getElementById('main').querySelector('.rock')
 let btnR = document.createElement('button');
 btnR.id = "button";
 main3.appendChild(btnR);
-btnR.innerHTML = '<img id="picR" src="/home/dom/Downloads/rockkk.jpg">'; //</img>'<img id="picR" src="/home/dom/functions/rock (1).png">';
+btnR.innerHTML = '<img id="picR" src="/home/dom/functions/rock (1).png">'; //'<img id="picR" src="/home/dom/Downloads/rockkk.jpg">'; 
 
 
 
@@ -60,13 +60,13 @@ let main1 = document.getElementById('main').querySelector('.paper');
 let btnP = document.createElement('button');
 btnP.id = "button";
 main1.appendChild(btnP);
-btnP.innerHTML = '<img id="picP" src="/home/dom/functions/paper.png">';
+btnP.innerHTML = '<img id="picP" src="/home/dom/functions/paper.png">'; //'<img id="picR" src="/home/dom/Downloads/paperrr.jpg">';
 
 let main2 = document.getElementById('main').querySelector('.scissors');
 let btnS = document.createElement('button');
 btnS.id = "button";
 main2.appendChild(btnS);
-btnS.innerHTML = '<img id="picS" src="file:///home/dom/functions/scissors(3).png">';
+btnS.innerHTML = '<img id="picS" src="file:///home/dom/functions/scissors(3).png">'; //'<img id="picR" src="/home/dom/Downloads/scissorsss.jpg">' 
 
 
 // add event listeners
