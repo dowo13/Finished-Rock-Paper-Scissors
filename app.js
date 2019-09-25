@@ -51,7 +51,7 @@ let main3 = document.getElementById('main').querySelector('.rock')
 let btnR = document.createElement('button');
 btnR.id = "button";
 main3.appendChild(btnR);
-btnR.innerHTML = '<img id="picR" src="/home/dom/functions/rock (1).png">';
+btnR.innerHTML = '<img id="picR" src="/home/dom/Downloads/rockkk.jpg">'; //</img>'<img id="picR" src="/home/dom/functions/rock (1).png">';
 
 
 
